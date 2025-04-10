@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网站</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">许振超</div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#portfolio">作品集</a></li>
+                <li><a href="#contact">联系我</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 轮播图区域 -->
+    <section id="home" class="hero">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="imgs/园区开花.png" alt="园区开花">
+                    <div class="slide-content">
+                        <h2>园区开花</h2>
+                        <p>春天的美好瞬间</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgs/园区开花(1).png" alt="园区开花">
+                    <div class="slide-content">
+                        <h2>园区开花</h2>
+                        <p>春天的美好瞬间</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgs/园区开花(2).png" alt="园区开花">
+                    <div class="slide-content">
+                        <h2>园区开花</h2>
+                        <p>春天的美好瞬间</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <!-- 关于我部分 -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="profile-image">
+                    <img src="imgs/67f0dc67610f115bc311410c7aa2169.jpg" alt="个人照片">
+                </div>
+                <div class="profile-info">
+                    <h2>关于我</h2>
+                    <p>你好！我是一名充满激情的创意设计师，专注于UI/UX设计和摄影艺术。拥有5年以上的行业经验，擅长将创意转化为现实。我热爱探索新的设计趋势，并致力于创造既美观又实用的作品。</p>
+                    <ul class="skills">
+                        <li>UI/UX设计</li>
+                        <li>摄影艺术</li>
+                        <li>品牌设计</li>
+                        <li>网页开发</li>
+                    </ul>
+                    <button class="btn">查看我的简历</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品集部分 -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>作品集</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="imgs/18e6a741cef50d22e31689accd58cab.jpg" alt="作品1">
+                    <div class="portfolio-overlay">
+                        <h3>作品1</h3>
+                        <p>创意设计作品</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="imgs/324a6c6cc5328dba8faf76f066e9a5c.jpg" alt="作品2">
+                    <div class="portfolio-overlay">
+                        <h3>作品2</h3>
+                        <p>创意设计作品</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="imgs/园区开花(4).png" alt="作品3">
+                    <div class="portfolio-overlay">
+                        <h3>作品3</h3>
+                        <p>创意设计作品</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我部分 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>联系我</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> email@example.com</p>
+                    <p><i class="fas fa-phone"></i> +86 123 4567 8900</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 中国，上海</p>
+                </div>
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="您的姓名" required>
+                    <input type="email" name="email" placeholder="您的邮箱" required>
+                    <textarea name="message" placeholder="您的留言" required></textarea>
+                    <button type="submit" class="btn">发送消息</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 许振超. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
